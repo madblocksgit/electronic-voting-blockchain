@@ -18,7 +18,7 @@ fclose($fp);
 function check_faces($t1,$t2)
 {
 //Credentials for access AWS Service code parameter
-$credentials = new Aws\Credentials\Credentials('AKIAXHI5XG5NOJZA7P6L', 'TV4Dpgwqy6mts/rm0OegDxs62VtstH97gddwErcO');
+$credentials = new Aws\Credentials\Credentials('ACCESS KEY','ACCESS KEY SECRET');
 
 //Get Rekognition Access
 $rekognitionClient = RekognitionClient::factory(array(
