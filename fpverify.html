@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="src/images/favicon.png" />
+    <title>Electronic Voting using Blockchain Technology</title>
+
+
+
+
+    <link href="src/css/bootstrap.min.css" rel="stylesheet" />
+    <link href='src/css/stylef500.css?v=13' rel='stylesheet' type='text/css' />
+    <link href='src/css/responsivee5bf.css?v=12' rel='stylesheet' type='text/css' />
+    <link href='src/css/animate.css' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body style="padding-top:0px;">
+   <section class="section-8">
+        <div class="wrapper">
+            <div class="container">
+                <div class="blocks">
+                    <div class="block block-1 banner">
+                        <div class="stories">
+                            <div class="row">
+                               <div class="col-md-6 col-md-offset-3 col-xs-12 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="timer-box">
+								<div class="text-center">
+                                <a href="index.html"> <img src="src/images/logo.png" alt="aadhar" width="100px"/> </a>
+								</div>
+								<div class="clearfix"></div>
+                                <div class="timer-title">
+                                    <h2>
+                                       Face Identity Verification
+
+                                    </h2>
+                                </div>
+								
+								<center><div id="my_camera"></div></center><br/>
+								<!-- First, include the Webcam.js JavaScript Library -->
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+	
+								<!-- Configure a few settings and attach camera -->
+								<script language="JavaScript">
+									Webcam.set({
+										width: 320,
+										height: 240,
+										image_format: 'jpeg',
+										jpeg_quality: 90
+									});
+									Webcam.attach('#my_camera');
+								</script>
+	
+								<!-- A button for taking snaps -->
+								<form>
+									<input type=button value="Take Snapshot" onClick="take_snapshot()">
+								</form>
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+								<!-- Code to handle taking the snapshot and displaying it locally -->
+								<script language="JavaScript">
+									function take_snapshot() {
+										// take snapshot and get image data
+										Webcam.snap( function(data_uri) {
+										// display results in page
+											document.getElementById('results').innerHTML = '<h2>Here is your image:</h2>' + '<img src="'+data_uri+'"/>';
+											$.ajax({
+											type: "POST",
+											url: "camsave.php",
+											data: { 
+												imgBase64: data_uri
+												}}).done(function(msg) {
+													console.log('saved');
+													console.log(msg);
+													if(msg=='1')
+														window.location = "vote.php";
+													else
+														window.alert('You are not allowed to vote');
+													// Do Any thing you want
+											});
+										});
+									}
+								</script>
+                            </div>
+							<div id="results">Your captured image will appear here...</div>
+                        </div>
+							</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--END-POP-->
+    <script type="text/javascript" src="src/js/jquery.min.js"></script>
+	<script type="text/javascript" src="src/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="src/js/app.js"></script>
+    <script type="text/javascript" src="src/js/wow.min.js"></script>
+    <script type="text/javascript" src="src/js/SmoothScroll.js"></script>
+
+
+
+
+<script type="text/javascript">
+
+		function validation(){
+
+			var user = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+      var aadhaarnumber = document.getElementById('numberaadhaar').value;
+
+			if( user == "" ){
+				document.getElementById('usernameid').innerHTML = " Please fill the username ";
+				return false;
+			}
+			if(( user.length < 3) || (user.length > 20)){
+				document.getElementById('usernameid').innerHTML = "Please fill the username between 3 and 20";
+				return false;
+			}
+
+			if(!isNaN(user)){
+				document.getElementById('usernameid').innerHTML = "please enter character";
+				return false;
+			}
+
+      if( aadhaarno == "" ){
+        document.getElementById('aadhaarno').innerHTML = "Please Enter your Addhaar number ";
+        return false;
+      }
+
+      if(aadhaarnumber.length!=12){
+        document.getElementById('aadhaarno').innerHTML = " Addhaar number should be 12 digits ";
+        return false;
+      }
+      if(isNaN(aadhaarnumber)){
+        document.getElementById('aadhaarno').innerHTML = " Addhaar number should conatins only digits ";
+        return false;
+      }
+
+
+			if( password == "" ){
+				document.getElementById('passwords').innerHTML = " Please fill the password ";
+				return false;
+			}
+
+			if((password.length < 5) || (password.length > 20)){
+				document.getElementById('passwords').innerHTML = " Please fill the password between 5 and 20";
+				return false;
+			}
+
+
+		}
+
+	</script>
+</body>
+
+
+</html>

@@ -1,0 +1,582 @@
+/*
+================================================
+responsive
+================================================
+*/
+@media (min-width: 1366px) {
+    .container {
+        width: 1220px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .navbar-brand {
+        margin-right: 20px;
+    }
+    .navbar-brand {
+        margin-right: 20px;
+    }
+
+    .navbar-nav > li {
+        padding: 24px 30px;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        font-size: 14px;
+    }
+
+    .navbar-default .sing-up-button {
+        padding: 22px 0;
+    }
+
+        .navbar-default .sing-up-button a {
+            font-size: 14px;
+            margin: 0 5px 0 0px;
+        }
+    
+    .navbar-default .sing-up-button a {
+            font-size: 13px;
+            margin: 0 5px 0 0px;
+        }
+
+        .banner .media-link .btn-round
+        {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        
+        .section-1 .blocks .block
+        {
+            padding: 50px 20px;
+        }
+        .section-1 .blocks .block .board
+        {
+            letter-spacing: 8.5px;
+        }
+        .section-1 .blocks .block .number.small-number
+        {
+            font-size: 87px;
+            line-height: 87px;
+        }
+
+        .section-3 h2
+        {
+            font-size:32px;
+        }
+        
+        .section-4 .blocks .block .icon.icon-xlg
+        {
+            font-size: 135px;
+            line-height: 135px;
+        }
+        .section-4 .blocks .block .icon
+        {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        .section-4 .blocks .block .icon .sub2 .sub
+        {
+            text-indent: 0;
+        }
+        .section-7 h2
+        {
+            font-size: 30px;
+        }
+        .section-8 .block-1 .title
+        {
+            font-size: 35px
+        }
+        footer .copy-right
+        {
+            font-size: 17px;
+        }
+}
+
+@media (max-width: 1024px) {
+
+    .navbar-brand img
+    {
+        width: 130px;
+    }
+    .navbar-default .navbar-nav > li > a
+    {
+        font-size: 13px;
+    }
+    .navbar-default .sing-up-button a {
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+    .banner .link-more .block
+    {
+        font-size: 22px;
+    }
+    .banner .media-link .btn-round
+    {
+        font-size: 13px;
+    }
+    .banner .media-link .media-button .play
+    {
+        padding-right: 38px;
+    }
+
+    .section-1 .blocks .block h2
+    {
+        font-size: 22px;
+    }
+    .section-1 .blocks .block .number
+    {
+        font-size: 83px;
+        line-height: 80px;
+    }
+    
+    .section-1 .blocks .block .number.small-number
+    {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .section-1 .blocks .block .board
+    {
+        font-size: 30px;
+    }
+    
+    .section-4 .blocks .block .icon.icon-xlg
+    {
+        font-size: 120px;
+    }
+
+    .section-1 .blocks .block .text
+    {
+       min-height: 145px;
+    }
+
+    footer .copy-right
+    {
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    
+    .navbar-brand {
+        display: block;
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+
+    .banner .banner_video {
+        height: 450px;
+    }
+
+    .banner .languages-nav
+    {
+        text-align: center;
+    }
+    .banner .languages-nav ul
+    {
+        display: inline-block;
+    }
+    .banner h1
+    {
+        margin-top: 50px;
+    }
+
+    .banner .media-link .media-button {
+        /*width: 50%;
+        float: left;*/
+        display: block
+    }
+
+    .banner .media-link .media-button .btn-round.btn-block {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+
+    .banner .media-link .media-button .play
+    {
+        padding-right: 10px;            
+    }
+
+    .banner .media-link .media-social {
+        display: block;
+        margin-top: 20px;
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .link-more .block {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .banner .media-link .media-social .slash {
+        display: inline-block;
+    }
+
+    .banner .timer-box {
+        width: 100%;
+        margin-left:0px;
+        top: 0px;
+    }
+
+    .section-1 .blocks .block h2
+    {
+        font-size: 27px;
+    }
+    .section-1 .blocks .block .text
+    {
+        min-height: auto;
+    }
+ 
+    .section-2 .wrapper {
+        background-image: linear-gradient(to bottom, transparent, #000);
+    }
+
+    .section-2 h2 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    
+    .section-2 h2 span {
+        font-size: 16px;
+    }
+
+    .section-3 h2 {
+        letter-spacing: normal;
+        font-size: 32px;
+    }
+
+    .section-3 .blocks .block {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .section-3 .blocks .block .title {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    .section-4 h2 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .section-4 .blocks .block .title
+    {
+        margin-top: 30px;
+    }
+    .section-4 .blocks .block .icon.icon-xlg {
+        font-size: 70px;
+        line-height: 70px;
+        padding-top:0
+    }
+
+    .section-6 .block-1 .block-inline {
+        margin-bottom: 50px;
+    }
+    
+    .section-6 .block-1 .block-inline.arrow::after {
+        top: 100%;
+        left: 45%;
+        transform: rotate(90deg);
+    }
+
+    
+    
+    .section-6 .block-2 .block-inline {
+        margin-bottom: 20px;
+    }
+
+    .section-6 .block .block-inline .block-wrapper
+    {
+        width: 60%;
+    }
+
+    .section-8 .block-1 {
+        text-align: left;
+    }
+
+    .section-8 .block-1 p {
+        padding-bottom: 40px;
+    }
+
+    .section-8 .block-1 .stories {
+        border-top: medium none;
+        /*border-left: 2px solid #fff;*/
+        padding-top: 0;
+        margin-left: 10px;
+    }
+
+    .section-8 .block-1 .stories .storie {
+        padding-left: 30px;
+    }
+
+    .section-8 .block-1 .stories .storie .line-before {
+        display: none;
+    }
+
+    .section-8 .block-1 .stories .storie .line-after {
+        border-top: medium none;
+        height: 100%;
+        left: 14px;
+        top: 0;
+        border-left: solid 2px #fff;
+    }
+
+    .section-8 .block-1 .stories .timeline {
+        left: 15px;
+        top: 0;
+    }
+
+
+    footer {
+        text-align: center;
+    }
+
+    footer .media-social {
+        text-align: inherit;
+    }
+
+    .telegram-bottom
+    {
+        width: 59px;
+        height: 59px;
+        background-position: -59px -83px;
+		right: 70px;
+    }
+    .telegram-bottom:hover
+    {
+        background-position:0 -83px;
+    }
+
+	.ctrlq.fb-button {
+		width: 59px;
+		height: 59px;
+		bottom: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+
+    .header .icon-bar
+    {
+        width: 35px;
+        height: 5px;
+    }
+    .navbar-brand img
+    {
+        width: 120px;
+    }
+    .head-navbar-user img
+    {
+        width: 50px;
+    }
+
+    .navbar-mobile
+    {
+        max-width: 90%;
+    }
+    
+    .banner h1
+    {
+        letter-spacing: 1px;
+    }
+
+    .banner .languages-nav ul li a
+    {
+        padding-right: 5px
+    }
+
+    .banner .timer-box .timer-title h2
+    {
+        font-size: 25px;
+    }
+    .banner .timer-box .timer .item {
+        font-size: 30px;
+    }
+
+    .banner .timer-box .timer .item span {
+        font-size: 14px;
+    }
+
+    .banner .timer-box .publish span {
+        font-size: 28px;
+    }
+
+
+    .section-1 .blocks .block
+    {
+        padding: 20px;
+    }
+    .section-1 .blocks .block h2
+    {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .section-1 .blocks .block .number {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .section-1 .blocks .block .board {
+        font-size: 18px;
+        line-height: 18px;
+        display: block;
+        letter-spacing: 5.5px;
+    }
+
+
+    .section-1 .blocks .block .number.small-number
+    {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .section-4 .blocks .block .icon {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+        .section-4 .blocks .block .icon .sub {
+            font-size: 15px;
+        }
+
+    .section-4 .blocks .sub-block h5 {
+        font-size: 15px;
+    }
+
+    .section-4 .blocks .sub-block span {
+        font-size: 15px;
+    }
+
+    .section-5 h2 {
+        font-size: 30px;
+    }
+
+    .section-5 .box .box-number span.number {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .section-5 .box .box-title {
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: 5px;
+    }
+
+    .section-6 h2 {
+        font-size: 30px;
+    }
+
+    .section-6 .block-1 h3 {
+        font-size: 20px;
+    }
+
+        .section-6 .block-1 h3 span {
+            font-size: 40px;
+        }
+
+    .section-6 .block .block-inline .block-wrapper
+    {
+        width: 100%;
+    }
+
+    .section-6 .block-2 h3 {
+        font-size: 30px;
+    }
+
+    .section-6 .block-2 .number {
+        font-size: 60px;
+    }
+
+    .section-6 .block-2 .number span {
+        font-size: 18px;
+    }
+
+    .section-7 h2 {
+        font-size: 30px;
+    }
+    
+    .section-8 h2 {
+        font-size: 30px;
+    }
+
+    .section-8 .block-1 .title {
+        font-size: 25px;
+    }
+
+    .section-8 .block-2 .item .title {
+        font-size: 18px;
+    }
+
+    .pop-ads .pop-icon a
+    {
+        width: 85px;
+        height: 88px;
+        background-position: -85px 0;
+        background-size: 170px 176px;
+    }
+        .pop-ads .pop-icon a.telegram
+        {
+            background-position-y:-88px;
+        }
+}
+
+@media (max-width: 320px) {
+    
+    .banner h1 {
+        font-size: 27px;
+    }
+
+    .banner h4 {
+        font-size: 14px;
+    }            
+    
+    .banner .media-link .media-social .slash.slash-long
+    {
+        width: 5%;
+    }
+
+    .banner .timer-box
+    {
+        padding: 10px;
+    }
+    
+    .banner .timer-box .timer-title h2 {
+        font-size: 22px;
+    }
+
+    .banner .timer-box .timer .item {
+        font-size: 25px;
+    }
+
+    .banner .timer-box .timer .item span {
+        font-size: 11px;
+    }
+
+    
+    .banner .timer-box .accepts
+    {
+        font-size: 19px;
+    }
+
+    .section-1 .blocks .block .board
+    {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .section-1 .blocks .block .number
+    {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .section-1 .blocks .block .number.small-number
+    {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
